@@ -1,0 +1,149 @@
+/* Formatting for header and footer sections  */
+
+.body {
+ background: purple; 
+}
+
+#logoIcon {
+  border-radius: 10px;
+}
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh;
+  background: purple; 
+  color: white;
+  align-items: flex-end;
+  margin-top: 2vh;
+}
+footer {
+  width:100%;
+}
+/* Formatting for the navigation bar and links class  */
+nav,
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+/* /* Formatting for h1  */
+h1 {
+  font-size: 220%;
+}
+/* Formatting for h2  */
+h2 {
+  font-size: 150%;
+  padding-left: 10px;
+}
+/* formatting for the anchor text  */
+a {
+  color: white;
+}
+/* Changes the colour of the anchor text when a users mouse hovers over it  */
+a:hover {
+  color: violet;
+}
+/* Allows the main section to adjust to different screen sizes  */
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Allows the about and work sections to be formatted and adjust to different screen sizes */
+.about-section,
+.work-section {
+  display: flex;
+  flex-direction: row;
+  background: purple;
+  color: white;
+  margin-top: 2vh;
+  padding: 2vh;
+  width:100%;
+}
+/* Paragraph formatting  */
+p {
+  margin-top: 2%;
+  margin-left: 2%;
+  font-size:110%;
+}
+/* formatting the headings about, work and contact me  */
+.section-heading {
+  font-size: 320%;
+  padding-right: 6vh;
+  text-align: right;
+}
+/* Creates the formatting for the project titles  */
+.text-block {
+  position: relative;
+  bottom: 60px;
+  left: 20px;
+  width: 150px;
+  background-color: white;
+  color: purple;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+/* Default image border is purple (same as background) */
+img {
+  border: 3px solid purple;
+}
+/* Changes border to white when a uses howevers on the image  */
+img:hover {
+  border: 6px solid white;
+}
+/* Adjusts the screen to fit smaller screens like cell phones  */
+@media screen and (max-width: 992px) {
+  footer {
+    display: inline-block;
+  }
+
+  .section-heading {
+    font-size: 200%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .work-section .section-heading {
+    padding-bottom: 15px ;
+  }
+
+  .about-section,
+  .work-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 160%;
+  }
+
+  h1 {
+    font-size: 400%;
+  }
+
+  h2 {
+    font-size: 250%;
+  }
+
+  h4 {
+    font-size: 200%;
+  }
+
+  .row {
+    display: block;
+    padding: 5px;
+  }
+
+  .text-block {
+    width: 300px;
+    height: 80px;
+  } */
