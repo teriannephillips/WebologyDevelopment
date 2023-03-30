@@ -1,13 +1,19 @@
 // Get references to the buttons and content element
-var btn2 = document.getElementById('projects');
-var btn3 = document.getElementById('about');
-var btn4 = document.getElementById('contact');
-var content = document.getElementById('content');
+let btn2 = document.getElementById('projects');
+let btn3 = document.getElementById('about');
+let btn4 = document.getElementById('contact');
+let content = document.getElementById('content');
+let contact = document.getElementById ('contactImg');
+
+
+console.log(contact);
+
 
 // Add event listeners to the buttons
 btn2.addEventListener('click', loadPage);
 btn3.addEventListener('click', loadPage);
 btn4.addEventListener('click', loadPage);
+contact.addEventListener('click', loadPage)
 
 function loadPage(event) {
   // Get the URL of the page to load based on the button ID
@@ -16,8 +22,9 @@ function loadPage(event) {
     url = './projects.html';
   } else if (event.target === btn3) {
     url = 'about.html';
-  } else if (event.target === btn4) {
+  } else if ((event.target === btn4) || (event.target === contact)) {
   url = 'contact.html';
+
 }
 fetch(url)
 .then(response => response.text())
@@ -27,4 +34,5 @@ fetch(url)
 })
 .catch(error => console.error(error));
 }
+
 

@@ -113,7 +113,7 @@ img {
   height: 100px;
 }
 
-h3 {
+h3, h1 {
   margin: 3%;
 }
 
@@ -171,6 +171,36 @@ body {
 img {
   vertical-align: middle;
 }
+.sectionImage {
+  position: relative;
+}
+
+#contactImg {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.sectionImage:hover #contactImg {
+  opacity: 0.3;
+}
+
+.sectionImage:hover .middle {
+  opacity: 1;
+}
 
 
 /* Slideshow container */
@@ -185,7 +215,7 @@ img {
   color: white;
   background-color: black;
   font-size: 15px;
-  padding: 8px 12px;
+  /* padding: 8px 12px; */
   position: absolute;
   bottom: 0px;
   width: 100%;
