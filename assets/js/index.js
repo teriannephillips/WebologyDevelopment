@@ -19,7 +19,7 @@ function loadPage(event) {
   // Get the URL of the page to load based on the button ID
   var url;
   if (event.target == btn2) {
-    url = 'Projects.html';
+    url = 'projects2.html';
   } else if (event.target === btn3) {
     url = 'about.html';
   } else if ((event.target === btn4) || (event.target === contact)) {
