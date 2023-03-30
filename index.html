@@ -16,21 +16,15 @@
 		</div>
 		<nav>
 			<ul class="links">
-				<li class="link"><a href="./index.html"><button>
-							<h3>HOME</h3></a></button></li>
-				<li class="link"><button><a href="./Projects.html">
-							<h3>PROJECTS</h3>
-						</a></button></li>
-				<li class="link"><button><a href="./about.html">
-							<h3>ABOUT</h3>
-						</a></button></li>
-				<li class="link"><button><a href="./contact.html">
-							<h3>CONTACT</h3>
-						</a></button></li>
+				<li class="link"><button onclick ="window.location.href='./index.html';" >HOME</button></li>
+				<li class="link"><button id ="projects">PROJECTS</button></li>
+				<li class="link"><button id = "about">ABOUT</button></li>
+				<li class="link"><button id = "contact">CONTACT</button></li>
 			</ul>
 		</nav>
 	</header>
-	<main>
+	<main id = "content">
+		<div id = "section"> 
 		<section>
 			<p class="sectionText">Welcome to Webology Development, a full-stack web development company that empowers
 				businesses to
@@ -57,10 +51,12 @@
 			<div class="sectionImage"><img src="assets/images/contact.jpg">
 			</div>
 		</section>
+		<script src="assets/js/index.js"></script>
+		</div>
 	</main>
-	<footer>
+<!-- 	<footer>
 		<p id="copy">&copy; 2023 Webology Development</p>
-	</footer>
+	</footer> -->
 </body>
 
 </html>

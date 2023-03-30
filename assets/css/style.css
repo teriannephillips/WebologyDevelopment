@@ -8,7 +8,6 @@ body {
   color: white;
   margin: 0%;
   padding: 0%;
-
 }
 
 #logoIcon {
@@ -63,11 +62,13 @@ li {
 }
 
 button {
-  height: 80px;
-  width: 80px;
-  border-radius: 50px;
+  height: 85px;
+  width: 85px;
+  border-radius: 55px;
   border-color: rgb(30, 2, 83);
   border-style: solid;
+  font-size: medium;
+  color: purple;
 }
 
 .navhover {
@@ -171,6 +172,7 @@ img {
   vertical-align: middle;
 }
 
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 800px;
@@ -230,6 +232,7 @@ img {
   }
 }
 
+
 @media screen and (max-width: 992px) {
   body {
     font-size: x-large;
@@ -239,6 +242,9 @@ img {
   footer {
     display: inline-block;
     width: 100%;
+  }
+  #aboutMain {
+    display:block;
   }
 
   nav {
@@ -255,11 +261,40 @@ img {
     align-items: center;
   }
 
-  section {
+  #contactImg {
+    width: 80%;
+  }
+
+  section, #contactMain {
     display: inline-block;
   }
 
   #computer {
     display: none;
   }
+  .contentContainer {
+    display:flex;
+    flex-direction: column;
+  }
+  button {
+    height: 120px;
+    width: 120px;
+    border-radius: 70px;
+    border-color: rgb(30, 2, 83);
+    border-style: solid;
+    font-size: x-large;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  #section {
+    flex-grow: 1;
+  }
+ .contact {
+  display:flex;
+  flex-direction: row;
+ }
 }
