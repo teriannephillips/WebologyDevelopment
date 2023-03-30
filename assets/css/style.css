@@ -277,9 +277,9 @@ img {
     flex-direction: column;
   }
   button {
-    height: 200px;
-    width: 200px;
-    border-radius: 100px;
+    height: 175px;
+    width: 175px;
+    border-radius: 90px;
     border-color: rgb(30, 2, 83);
     border-style: solid;
     font-size: x-large;
